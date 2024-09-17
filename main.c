@@ -65,7 +65,7 @@ int main()
 
     if (opcao == 0)
     {
-      printf("Saindo...\n");
+      printf("Obrigado por usar nossos sistemas\n");
       break;
     }
     else if (opcao >= 1 && opcao <= 7)
