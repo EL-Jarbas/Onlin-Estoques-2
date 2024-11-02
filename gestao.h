@@ -12,8 +12,10 @@ typedef struct produto
     float preco;
 } Produto;
 
+typedef struct lista Lista;
+typedef struct no No;
+
 // Funções relacionadas à gestão de produtos
-void mergeSort(int i, int f, Produto v[]);
 void cadastrar(char *company);
 void listar(char *company);
 void excluir(int cod, char *company);
@@ -21,8 +23,6 @@ void editar(int cod, char *company);
 void estoqueZerado(char *company);
 void filtrandoPeloEstoque(char *company);
 void buscar(int cod, char *company);
-int quantidadeDeProdutos(char *company);
-int buscaBinariaRecursiva(int cod, Produto v[], int inicio, int final);
 void atualizarArquivoOrdenado(char *company, Produto novoProduto);
 
 #endif

@@ -4,7 +4,6 @@
 #include <ctype.h>
 #include "login.h"
 
-
 // Função para verificar se o email já existe no arquivo login.txt
 int verificarEmailExistente(const char *email)
 {
@@ -155,14 +154,14 @@ void cadastrar_empresa()
     }
     else
     {
-      printf("Email inválido ou já cadastrado. Por favor, tente novamente.\n");
+      printf("Email invalido ou ja cadastrado. Por favor, tente novamente.\n");
     }
   }
 
   // Verificação de senha forte
   while (1)
   {
-    printf("Digite a senha (deve ter entre 8 e 32 caracteres, incluir um número e uma letra maiúscula): ");
+    printf("Digite a senha (deve ter entre 8 e 32 caracteres, incluir um numero e uma letra maiuscula): ");
     scanf("%s", senha);
 
     if (senha_forte(senha))
@@ -201,7 +200,7 @@ int login_empresa()
   printf("Digite o nome da empresa: ");
   scanf(" %[^\n]%*c", nome);
 
-  printf("Digite o CNPJ (apenas números): ");
+  printf("Digite o CNPJ (apenas numeros): ");
   scanf("%d", &cnpj);
 
   printf("Digite a senha: ");
@@ -247,7 +246,7 @@ int login_empresa()
   }
   else if (!senha_valida)
   {
-    printf("Senha inválida.\n");
+    printf("Senha invalida.\n");
   }
 
   return nome_valido && cnpj_valido && senha_valida;
